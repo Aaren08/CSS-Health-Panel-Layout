@@ -1,0 +1,81 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h2 span {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.image::after {
+  content: "";
+  background: url(images/Nature16.jpg) no-repeat center center/cover;
+  display: block;
+  height: 120vh;
+  width: 100%;
+}
+
+#wrapper > div {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 25vh;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: all 0.5s ease-in;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  position: absolute;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+}
+
+#wrapper > div:hover {
+  transform: scale(0.98);
+  opacity: 0.8;
+}
+
+#wrapper > div:nth-of-type(1) {
+  grid-column: 1/3;
+}
+
+#wrapper > div:nth-of-type(6) {
+  grid-column: 3/5;
+}
+
+#wrapper > div:nth-of-type(9) {
+  grid-column: 3/5;
+}
+
+#wrapper > div:nth-of-type(10) {
+  grid-column: 1/3;
+}
+
+.bg1 {
+  color: #fff;
+  background: url(images/Space3.jpg);
+}
+
+.bg2 {
+  background: url(images/Nature30.jpg);
+}
